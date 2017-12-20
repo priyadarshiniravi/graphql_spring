@@ -57,8 +57,8 @@ public class GraphqlConfiguration {
     }
 
     @Bean
-    public Query query(PostDao postDao) {
-        return new Query(postDao);
+    public Query query(PostDao postDao, AuthorDao authorDao) {
+        return new Query(postDao, authorDao);
     }
 
     @Bean

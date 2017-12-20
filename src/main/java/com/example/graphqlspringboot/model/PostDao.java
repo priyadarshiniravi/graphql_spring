@@ -1,11 +1,13 @@
 package com.example.graphqlspringboot.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @AllArgsConstructor
+@Getter
 public class PostDao {
     private List<Post> posts;
 

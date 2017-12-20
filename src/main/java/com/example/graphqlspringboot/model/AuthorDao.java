@@ -1,8 +1,11 @@
 package com.example.graphqlspringboot.model;
 
+import lombok.Getter;
+
 import java.util.List;
 import java.util.Optional;
 
+@Getter
 public class AuthorDao {
     private List<Author> authors;
 

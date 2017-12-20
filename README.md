@@ -19,5 +19,23 @@ query {
         }
     }
 }
+
+query {
+    getPostById(author: "Author0") {
+        id
+        title
+        category
+        author {
+            id
+            name
+        }
+    }
+}
+query {
+    getAuthors {
+            id
+            name
+    }
+}
 ```
 
