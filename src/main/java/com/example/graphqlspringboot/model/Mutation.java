@@ -3,13 +3,11 @@ package com.example.graphqlspringboot.model;
 import java.util.UUID;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public class Mutation implements GraphQLMutationResolver {
     private PostDao postDao;
-
-    public Mutation(PostDao postDao) {
-        this.postDao = postDao;
-    }
 
     public Post writePost(String title, String text, String category, String author) {
         Post post = new Post();

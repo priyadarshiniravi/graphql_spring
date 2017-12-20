@@ -1,14 +1,13 @@
 package com.example.graphqlspringboot.model;
 
+import lombok.AllArgsConstructor;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
+@AllArgsConstructor
 public class PostDao {
     private List<Post> posts;
-
-    public PostDao(List<Post> posts) {
-        this.posts = posts;
-    }
 
     public List<Post> getRecentPosts(int count, int offset) {
         return posts.stream()
