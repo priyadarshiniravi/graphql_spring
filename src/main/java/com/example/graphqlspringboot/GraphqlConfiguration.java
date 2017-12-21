@@ -17,6 +17,7 @@ import com.example.graphqlspringboot.model.Query;
 
 @Configuration
 public class GraphqlConfiguration {
+    //TODO: can be fetched from the DB instead of hard coding.
     @Bean
     public PostDao postDao() {
         List<Post> posts = new ArrayList<>();
